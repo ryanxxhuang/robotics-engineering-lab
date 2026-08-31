@@ -4,7 +4,7 @@
 
 Python is already a working skill. The next foundation to strengthen is C++, because robotics software requires performance-aware code, memory understanding, STL fluency, and the ability to read and modify existing C++ systems.
 
-Georgia Tech CS1332 will be reviewed in full before starting serious LeetCode practice. The review will not be passive: each major data structure and algorithm will be reimplemented in C++, tested, and connected to robotics use cases where appropriate.
+Georgia Tech CS1332 will be reviewed in full before starting serious LeetCode practice. The review will not be passive: each major data structure and algorithm will be reimplemented in both Python and C++, tested, and connected to robotics use cases where appropriate.
 
 ## Today’s target
 
@@ -63,7 +63,7 @@ Review the purpose and interfaces of:
 - Stacks and queues
 - Big-O analysis
 
-Do not try to finish the entire CS1332 course today. Today’s goal is to establish the review method: concept → C++ implementation → tests → complexity → common failure cases.
+Do not try to finish the entire CS1332 course today. Today’s goal is to establish the review method: concept → Python implementation → C++ implementation → tests → complexity → common failure cases.
 
 ### 4. Verification — 30 minutes
 
@@ -87,7 +87,7 @@ ctest --test-dir projects/cpp-foundations/build --output-on-failure
 Add a short note containing:
 
 - Three C++ ideas that were unfamiliar or easy to confuse
-- Two differences between Java implementations from CS1332 and C++ implementations
+- Two differences among the Java implementations from CS1332 and the Python and C++ implementations
 - One example where copying a vector would be less efficient than passing a const reference
 - One question to revisit tomorrow
 
