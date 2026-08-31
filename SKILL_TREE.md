@@ -5,13 +5,27 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 ## 1. Programming and systems
 
 - ✅ Python: scripting, data processing, and prototyping
-- 🔄 C++: modern syntax, memory, interfaces, and reusable components
-- 🔄 Data structures and algorithms
+- 🔄 C++ fundamentals: types, control flow, functions, references, pointers, classes, and STL
+- 🔄 C++ engineering: interfaces, memory ownership, const-correctness, debugging, and reusable components
+- 🔄 Data structures and algorithms in C++
 - 🔄 Linux command line and debugging
 - 🔄 CMake and package organization
 - ✅ Git and Docker fundamentals
 
-## 2. Robotics software
+## 2. Georgia Tech CS1332 review
+
+- 🔄 Asymptotic analysis and implementation complexity
+- ⬜ Arrays, linked lists, stacks, queues, and deques
+- ⬜ Binary search trees, AVL trees, and balanced trees
+- ⬜ Heaps, priority queues, and sorting
+- ⬜ Hash tables and collision handling
+- ⬜ Pattern matching and string algorithms
+- ⬜ Graph representations and graph traversals
+- ⬜ Minimum spanning trees and graph algorithms
+- ⬜ Recursion, invariants, edge cases, and correctness proofs
+- ⬜ C++ translation of the original Java implementations
+
+## 3. Robotics software
 
 - ✅ ROS 2 nodes, topics, messages, and launch workflows
 - 🔄 ROS 2 package architecture and lifecycle design
@@ -19,17 +33,17 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - 🔄 rosbag-based reproduction and system diagnosis
 - 🔄 Simulation-to-real validation
 
-## 3. Autonomous navigation
+## 4. Autonomous navigation
 
 - ✅ LiDAR and IMU integration
 - ✅ Mapping and SLAM workflow
 - ✅ Waypoint following and Pure Pursuit concepts
-- 🔄 C++ controller implementation and unit testing
+- ⬜ C++ controller implementation and unit testing
 - 🔄 PID and MPC design tradeoffs
 - 🔄 RRT and other planning methods
 - ⬜ Behavior planning and safety fallback states
 
-## 4. Perception and state estimation
+## 5. Perception and state estimation
 
 - 🔄 Sensor calibration and synchronization
 - 🔄 Point-cloud processing
@@ -38,7 +52,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ⬜ Object detection and tracking
 - ⬜ Robustness testing under noise and failure
 
-## 5. Machine learning and Physical AI
+## 6. Machine learning and Physical AI
 
 - 🔄 PyTorch fundamentals
 - ⬜ Dataset construction and experiment tracking
@@ -47,7 +61,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ⬜ Isaac Sim or equivalent robotics simulation
 - ⬜ Policy deployment and closed-loop evaluation
 
-## 6. Engineering quality
+## 7. Engineering quality
 
 - 🔄 Unit, integration, and regression testing
 - 🔄 Metrics, plots, and reproducible experiments
@@ -56,9 +70,10 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ⬜ Hardware-in-the-loop testing
 - ⬜ Technical design documents and code reviews
 
-## 7. Evidence to build
+## 8. Evidence to build
 
-- 🔄 Pure Pursuit controller with tests
+- 🔄 C++ and CS1332 review notebook/code archive
+- ⬜ LeetCode practice in C++ after the CS1332 review
 - ⬜ ROS 2 integration package
 - ⬜ SLAM drift investigation and evaluation report
 - ⬜ Planner comparison experiment
@@ -67,4 +82,4 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 
 ## Progress rule
 
-A skill moves to ✅ only when it has code, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Learning by watching or copying a tutorial remains 🔄 until independently demonstrated.
+A skill moves to ✅ only when it has an independent implementation, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Passive course completion does not count as mastery. LeetCode begins after the CS1332 review establishes the required data-structure foundations.
