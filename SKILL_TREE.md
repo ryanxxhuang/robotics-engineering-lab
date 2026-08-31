@@ -7,7 +7,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ✅ Python: scripting, data processing, and prototyping
 - 🔄 C++ fundamentals: types, control flow, functions, references, pointers, classes, and STL
 - 🔄 C++ engineering: interfaces, memory ownership, const-correctness, debugging, and reusable components
-- 🔄 Data structures and algorithms in C++
+- 🔄 Data structures and algorithms in Python and C++
 - 🔄 Linux command line and debugging
 - 🔄 CMake and package organization
 - ✅ Git and Docker fundamentals
@@ -23,7 +23,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ⬜ Graph representations and graph traversals
 - ⬜ Minimum spanning trees and graph algorithms
 - ⬜ Recursion, invariants, edge cases, and correctness proofs
-- ⬜ C++ translation of the original Java implementations
+- ⬜ Python and C++ reimplementation of the original Java implementations
 
 ## 3. Robotics software
 
@@ -72,7 +72,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 
 ## 8. Evidence to build
 
-- 🔄 C++ and CS1332 review notebook/code archive
+- 🔄 Python, C++, and CS1332 review notebook/code archive
 - ⬜ LeetCode practice in C++ after the CS1332 review
 - ⬜ ROS 2 integration package
 - ⬜ SLAM drift investigation and evaluation report
@@ -82,4 +82,4 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 
 ## Progress rule
 
-A skill moves to ✅ only when it has an independent implementation, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Passive course completion does not count as mastery. LeetCode begins after the CS1332 review establishes the required data-structure foundations.
+A skill moves to ✅ only when it has an independent implementation, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Passive course completion does not count as mastery. LeetCode begins after the CS1332 review establishes the required data-structure foundations in both Python and C++.
