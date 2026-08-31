@@ -73,7 +73,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 ## 8. Evidence to build
 
 - 🔄 Python, C++, and CS1332 review notebook/code archive
-- ⬜ LeetCode practice in C++ after the CS1332 review
+- ⬜ LeetCode practice primarily in Python after the CS1332 review
 - ⬜ ROS 2 integration package
 - ⬜ SLAM drift investigation and evaluation report
 - ⬜ Planner comparison experiment
