@@ -1,61 +1,118 @@
-# Day 1 — Pure Pursuit Controller Engineering
+# Day 1 — C++ and DSA Foundation Reset
 
-## Objective
+## Why this is Day 1
 
-Implement a reusable Pure Pursuit controller in C++, then validate it with tests and a reproducible CMake build.
+Python is already a working skill. The next foundation to strengthen is C++, because robotics software requires performance-aware code, memory understanding, STL fluency, and the ability to read and modify existing C++ systems.
 
-## Required behavior
+Georgia Tech CS1332 will be reviewed in full before starting serious LeetCode practice. The review will not be passive: each major data structure and algorithm will be reimplemented in C++, tested, and connected to robotics use cases where appropriate.
 
-The controller should:
+## Today’s target
 
-- Select a valid lookahead waypoint
-- Transform the waypoint from world coordinates into the vehicle frame
-- Compute the steering command from geometric curvature
-- Enforce a maximum steering angle
-- Normalize angular error where needed
-- Stop safely when no valid waypoint exists
-- Handle straight, left-turn, and right-turn paths
+Build a clean C++ workspace and complete the first fundamentals module:
 
-## Suggested interfaces
+- Compile and run a C++ program from the terminal
+- Understand variables, primitive types, operators, conditionals, and loops
+- Write functions with values, references, and const references
+- Use `std::string` and `std::vector`
+- Read input and produce formatted output
+- Explain stack-like local storage versus dynamically managed objects at a basic level
+- State Big-O complexity for simple loops and vector operations
 
-```cpp
-struct Pose2D {
-    double x;
-    double y;
-    double yaw;
-};
+## Work plan — approximately 3 hours
 
-struct Waypoint {
-    double x;
-    double y;
-    double speed;
-};
+### 1. Environment and build — 20 minutes
 
-struct ControlCommand {
-    double steering;
-    double speed;
-};
-```
+Create a small CMake project under `projects/cpp-foundations/` with:
 
-## Validation checklist
+- `CMakeLists.txt`
+- `src/main.cpp`
+- `tests/`
+- `README.md`
 
-- [ ] C++ implementation compiles with CMake
-- [ ] Straight path produces steering near zero
-- [ ] Left-turn path produces the correct steering direction
-- [ ] Right-turn path produces the correct steering direction
-- [ ] Empty or invalid path commands a safe stop
-- [ ] Tests run with ctest
-- [ ] README or notes explain the coordinate transformation and formula
-- [ ] Failure and debugging notes are recorded
-
-## Expected commands
+The program must compile with:
 
 ```bash
-cmake -S . -B build
-cmake --build build
-ctest --test-dir build
+cmake -S projects/cpp-foundations -B projects/cpp-foundations/build
+cmake --build projects/cpp-foundations/build
 ```
 
-## Completion evidence
+### 2. C++ fundamentals — 80 minutes
 
-Add the implementation under projects/pure_pursuit/ and record the test output, design decisions, and next ROS 2 integration step in this file or a linked project README.
+Implement small functions for:
+
+- Maximum and minimum of a vector
+- Average of a vector
+- Reversing a vector in place
+- Counting values that satisfy a condition
+- Normalizing an angle into a chosen interval
+
+For every function, record:
+
+- Input and output types
+- Whether arguments are copied or passed by reference
+- Time complexity
+- Space complexity
+- One edge case
+
+### 3. CS1332 bridge — 45 minutes
+
+Review the purpose and interfaces of:
+
+- Arrays and dynamic arrays
+- Linked lists
+- Stacks and queues
+- Big-O analysis
+
+Do not try to finish the entire CS1332 course today. Today’s goal is to establish the review method: concept → C++ implementation → tests → complexity → common failure cases.
+
+### 4. Verification — 30 minutes
+
+Add tests for:
+
+- Empty vector
+- One-element vector
+- Normal input
+- Duplicate values
+- Negative values
+- Boundary angle values
+
+Run:
+
+```bash
+ctest --test-dir projects/cpp-foundations/build --output-on-failure
+```
+
+### 5. Learning record — 20 minutes
+
+Add a short note containing:
+
+- Three C++ ideas that were unfamiliar or easy to confuse
+- Two differences between Java implementations from CS1332 and C++ implementations
+- One example where copying a vector would be less efficient than passing a const reference
+- One question to revisit tomorrow
+
+## Review sequence after Day 1
+
+1. C++ syntax, references, pointers, classes, and STL
+2. Complexity analysis and correctness reasoning
+3. Linear data structures
+4. Recursion, searching, sorting, and heaps
+5. Trees, AVL trees, and balanced trees
+6. Hash tables
+7. Strings and pattern matching
+8. Graph representations and traversals
+9. Minimum spanning trees and related graph algorithms
+10. LeetCode patterns in C++
+
+## Completion checklist
+
+- [ ] CMake project builds successfully
+- [ ] At least five C++ functions are implemented
+- [ ] Tests cover empty, normal, duplicate, negative, and boundary cases
+- [ ] Complexity is recorded for every function
+- [ ] CS1332 review notes are written
+- [ ] A Git commit records the completed work
+
+## Definition of done
+
+Day 1 is complete when the code can be built and tested from a clean terminal command, and the learner can explain the difference between passing a vector by value, by reference, and by const reference.
