@@ -97,6 +97,12 @@ Add a short note containing:
 - C++: primary language for robotics software, ROS 2, performance, memory, and STL
 - CS1332: every major topic is implemented in both languages; Python receives deeper interview practice, while C++ emphasizes engineering understanding
 
+## Language strategy
+
+- Python: primary language for LeetCode and technical interviews
+- C++: primary language for robotics software, ROS 2, performance, memory, and STL
+- CS1332: every major topic is implemented in both languages; Python receives deeper interview practice, while C++ emphasizes engineering understanding
+
 ## Review sequence after Day 1
 
 1. C++ syntax, references, pointers, classes, and STL
