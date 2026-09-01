@@ -7,7 +7,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 - ✅ Python: scripting, data processing, and prototyping
 - 🔄 C++ fundamentals: types, control flow, functions, references, pointers, classes, and STL
 - 🔄 C++ engineering: interfaces, memory ownership, const-correctness, debugging, and reusable components
-- 🔄 Data structures and algorithms in Python and C++
+- 🔄 Data structures and algorithms in Python and C++ (formal CS1332 implementation follows the Python readiness phase)
 - 🔄 Linux command line and debugging
 - 🔄 CMake and package organization
 - ✅ Git and Docker fundamentals
@@ -73,7 +73,7 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 ## 8. Evidence to build
 
 - 🔄 Python, C++, and CS1332 review notebook/code archive
-- ⬜ LeetCode practice primarily in Python after the CS1332 review
+- 🔄 LeetCode practice primarily in Python during the Python interview-fluency phase
 - ⬜ ROS 2 integration package
 - ⬜ SLAM drift investigation and evaluation report
 - ⬜ Planner comparison experiment
@@ -82,4 +82,4 @@ Legend: ✅ demonstrated foundation · 🔄 actively developing · ⬜ next targ
 
 ## Progress rule
 
-A skill moves to ✅ only when it has an independent implementation, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Passive course completion does not count as mastery. LeetCode begins after the CS1332 review establishes the required data-structure foundations in both Python and C++.
+A skill moves to ✅ only when it has an independent implementation, a reproducible command, tests or quantitative evaluation, and a short explanation of tradeoffs. Passive course completion does not count as mastery. LeetCode begins with Easy problems during the Python interview-fluency phase; formal CS1332 implementation follows the Python readiness checkpoint.
