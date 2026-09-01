@@ -185,3 +185,77 @@ LearnCpp Chapter 1 is complete. Day 2 established the foundations needed for lat
 ## Next lesson
 
 LearnCpp Chapter 2 — Functions and Files.
+
+
+## Python and LeetCode practice
+
+Today also began the Python and LeetCode track. Python will be the primary language for LeetCode and coding interviews, while C++ remains the primary language for robotics engineering and systems work.
+
+### Python warm-up
+
+Reviewed and practiced:
+
+- Variables and basic types
+- Lists and indexing
+- `for` loops
+- Functions
+- `print()` versus `return`
+- Accumulator variables
+- Nested lists and nested loops
+- Basic edge-case awareness
+
+### LeetCode problems
+
+#### #1480 — Running Sum of 1d Array
+
+Status: Completed with guidance.
+
+Concepts practiced:
+
+- Accumulator pattern
+- Iterating through a list
+- `list.append()`
+- Returning a new list
+- Time complexity: O(n)
+- Extra space complexity: O(n)
+
+#### #1672 — Richest Customer Wealth
+
+Status: Attempted as a guided Python syntax exercise.
+
+The algorithmic direction was understood: use nested loops to calculate each customer's total and track the maximum. The main difficulties were translating the logic into Python syntax, including direct iteration over nested lists, variable scope, maximum tracking, and the difference between list methods and built-in functions. This problem is not counted as an independent completion.
+
+#### #1295 — Find Numbers with Even Number of Digits
+
+Status: Completed independently.
+
+Concepts practiced:
+
+- `for` loop
+- `if` condition
+- Counter variable
+- `str()`
+- `len()`
+- Modulo operator `%`
+
+### Learning strategy
+
+LeetCode will serve two purposes:
+
+1. Build data-structures-and-algorithms problem-solving ability
+2. Build practical familiarity and confidence with Python syntax
+
+The current approach is to learn Python syntax through small, progressively harder Easy problems rather than completing a separate Python review course first.
+
+## Daily study routine
+
+The standard daily routine is now:
+
+1. C++ — continue LearnCpp in the official order
+2. DSA — review Georgia Tech CS1332 in sequence
+3. Python — review only the syntax needed for that day's LeetCode problem
+4. LeetCode — solve one Easy problem
+
+## Next study session
+
+DSA will begin next study day with CS1332 Arrays and ArrayLists. The study will cover array access, traversal, ArrayList operations, resizing, and complexity analysis, stopping before Recursion.
