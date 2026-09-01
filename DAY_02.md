@@ -1,28 +1,109 @@
-# Day 2 — LearnCpp 1.1
+# Day 2 — LearnCpp Chapter 1
 
 ## Goal
 
-Understand statements, functions, the `main()` entry point, sequential execution, and basic C++ syntax errors.
+Complete LearnCpp Chapter 1 and build a reliable mental model of basic C++ program structure, variables, input/output, expressions, initialization, and compilation diagnostics.
 
-## Completed concepts
+## Completed scope
 
-- [x] A statement is a single instruction that causes the program to perform an action.
-- [x] A function is a collection of statements that execute sequentially.
-- [x] Every C++ program requires a `main()` function as its entry point.
-- [x] Statements inside `main()` execute from top to bottom.
-- [x] Most statements end with a semicolon.
-- [x] A missing semicolon causes a syntax error.
-- [x] `#include <iostream>` is a preprocessor directive, not a statement. Its purpose is analogous to Python's `import`, but it is processed before compilation.
+- [x] 1.1 Statements and the structure of a C++ program
+- [x] 1.2 Comments
+- [x] 1.3 Objects and variables
+- [x] 1.4 Variable assignment and initialization
+- [x] 1.5 std::cout, std::cin, and std::endl
+- [x] 1.6 Uninitialized variables and undefined behavior
+- [x] 1.7 Keywords and naming identifiers
+- [x] 1.8 Whitespace and basic formatting
+- [x] 1.9 Literals and operators
+- [x] 1.10 Expressions
+- [x] 1.11 Developing the first program
+- [x] Chapter 1 summary exercise
 
-## Implementation
+## Core concepts
 
-File:
+### Program structure and syntax
+
+- A statement is an instruction that performs an action.
+- A function is a named collection of statements.
+- Every executable C++ program requires a `main()` function as its entry point.
+- Statements inside `main()` execute sequentially from top to bottom.
+- Most statements end with a semicolon.
+- A missing semicolon causes a syntax error.
+- `#include <iostream>` is a preprocessor directive. It provides declarations for standard input/output facilities and is conceptually similar to Python's `import`, although the compilation mechanisms are different.
+
+### Comments and formatting
+
+- `//` starts a single-line comment.
+- `/* ... */` creates a block comment.
+- Comments are ignored by the compiler and exist for human readers.
+- Whitespace usually does not change program behavior, but whitespace inside a string literal is data.
+- Consistent indentation and spacing improve readability and reduce maintenance errors.
+
+### Objects, variables, initialization, and assignment
+
+- An object is a region of memory used to store data.
+- A variable is a named object whose value can change.
+- `int` stores integral values, while `double` stores floating-point values.
+- `int x{};` value-initializes `x` to zero.
+- `int x;` creates an automatic local variable without initializing its value.
+- Initialization gives an object its initial value when it is created.
+- Assignment changes the value of an existing object after creation.
+- A variable can be initialized once and assigned new values many times.
+
+### Input and output
+
+- `std::cout` writes to standard output.
+- `std::cin` reads from standard input.
+- As a beginner analogy, `std::cout` is similar to Python's `print`, and `std::cin` is similar to Python's `input`.
+- More precisely, C++ uses streams: `<<` inserts data into an output stream and `>>` extracts data from an input stream.
+- `'\\n'` adds a newline. `std::endl` adds a newline and flushes the output stream.
+
+### Undefined behavior
+
+Reading an uninitialized automatic variable can cause undefined behavior. The C++ standard does not specify one reliable result. The program may appear to work, print an unpredictable value, fail, or behave differently across compilers, machines, build settings, or executions.
+
+The strict compiler flags caught this case:
+
+```text
+uninitialized.cpp:5:19: error: variable 'x' is uninitialized when used here [-Werror,-Wuninitialized]
+```
+
+`-Werror` promotes detected warnings to errors, but compiler flags cannot guarantee that every instance of undefined behavior will be detected. The safe practice is to initialize variables before use.
+
+### Identifiers and keywords
+
+- Identifiers may contain letters, digits, and underscores, but cannot start with a digit.
+- C++ is case-sensitive.
+- Keywords such as `return` cannot be used as identifiers.
+- Names such as `lidar_points`, `batteryVoltage`, and `elapsed_time_seconds` are valid and readable.
+- Names such as `3d_map` and `battery-voltage` are invalid.
+- Names beginning with an underscore can be valid, but leading-underscore conventions should generally be avoided because some forms are reserved by the implementation.
+
+### Literals, operators, and expressions
+
+- A literal is a value written directly in source code, such as `10`, `12.6`, or `"robot"`.
+- Operators perform actions such as addition, subtraction, multiplication, division, assignment, insertion, and extraction.
+- Arithmetic operators follow precedence and associativity rules similar to ordinary arithmetic.
+- An expression produces a value or causes an operation.
+- `x = 5` is an assignment expression: it changes `x` to 5 and also has a resulting value.
+- `std::cout << x + y` combines an arithmetic expression with stream insertion.
+
+## Implementations
+
+The following files were created or used during the lesson:
 
 ```text
 projects/cpp-foundations/day2/main.cpp
+projects/cpp-foundations/day2/operators.cpp
+projects/cpp-foundations/day2/uninitialized.cpp
+projects/cpp-foundations/day2/safe_initialization.cpp
+projects/cpp-foundations/day2/first_program.cpp
+projects/cpp-foundations/day2/chapter1_summary.cpp
 ```
 
-Program output:
+### Day 2 robot program
+
+Output:
 
 ```text
 [robot] booting
@@ -30,32 +111,77 @@ Program output:
 [robot] controller ready
 ```
 
-## Build command
+### Variable update program
 
-```bash
-clang++ -std=c++17 -Wall -Wextra -Wconversion -Wsign-conversion -Werror -pedantic-errors main.cpp -o day2
-```
-
-## Syntax error experiment
-
-The semicolon after the first `std::cout` statement was intentionally removed.
-
-Compiler output:
+Output:
 
 ```text
-main.cpp:3:37: error: expected ';' after expression
+Initial Lidar pointers: 720
+Initial battery voltage: 12.6
+Initial robot state: 0
+Updated Lidar pointers: 1080
+Updated battery voltage: 11.8
+Updated robot state: 1
 ```
 
-The semicolon was restored, the program compiled successfully, and the executable produced the expected output.
+### Operators exercise
 
-## Key takeaways
+The program was compiled and executed successfully. The observed results included:
 
-- Statements are the basic executable units of a C++ program.
-- `main()` is the required program entry point.
-- The compiler enforces C++ syntax rules before producing an executable.
-- Compiler diagnostics identify the source location and often suggest the expected correction.
-- A successful compilation and a successful execution are separate events.
+```text
+7
+2
+14
+20
+5
+x is now 5
+```
+
+### First input/output program
+
+After correcting the output labels to use the input variable instead of hardcoding `4`, input `10` produced:
+
+```text
+Enter an integer: 10
+Double 10 is: 20
+Triple 10 is: 30
+```
+
+### Chapter 1 summary exercise
+
+The program reads two integers and prints their sum and difference. With input `10` and `5`, it produced:
+
+```text
+Enter an integer: 10
+Enter another integer: 5
+10 + 5 is 15
+10 - 5 is 5
+```
+
+## Build command
+
+All exercises were checked with:
+
+```bash
+clang++ -std=c++17 -Wall -Wextra -Wconversion -Wsign-conversion -Werror -pedantic-errors source.cpp -o program
+```
+
+The output filename must match the executable name used at runtime. For example:
+
+```bash
+clang++ chapter1_summary.cpp -o chapter1_summary
+./chapter1_summary
+```
+
+## Final self-check
+
+1. Initialization gives an object its initial value at creation. Assignment changes the value of an existing object afterward; assignment can happen repeatedly.
+2. Undefined behavior has no guaranteed result. It can produce an incorrect value, appear to work, crash, or vary with the compiler, machine, build configuration, or execution.
+
+## Result
+
+LearnCpp Chapter 1 is complete. Day 2 established the foundations needed for later control flow, functions, data structures, and robotics-oriented C++ programs.
 
 ## Next lesson
 
-LearnCpp 1.2 — Comments.
+LearnCpp Chapter 2 — Debugging C++ programs.
