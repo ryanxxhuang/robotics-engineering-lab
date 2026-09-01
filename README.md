@@ -13,8 +13,8 @@ A structured learning repository for robotics software, autonomous systems, and 
 
 ## Structure
 
-- [SKILL_TREE.md](SKILL_TREE.md) — capability map and progress
-- [DAY_01.md](DAY_01.md) — Pure Pursuit controller engineering task
+- [LEARNING_PLAN.md](LEARNING_PLAN.md) — persistent study plan, sequence, and daily rules\n- [SKILL_TREE.md](SKILL_TREE.md) — capability map and progress
+- [DAY_01.md](DAY_01.md) — Pure Pursuit controller engineering task\n- [DAY_02.md](DAY_02.md) — LearnCpp Chapter 1 and Python/LeetCode foundation progress
 - projects/ — implementation projects
 - notes/ — technical notes
 - experiments/ — evaluation records
