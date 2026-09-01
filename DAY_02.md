@@ -184,4 +184,4 @@ LearnCpp Chapter 1 is complete. Day 2 established the foundations needed for lat
 
 ## Next lesson
 
-LearnCpp Chapter 2 — Debugging C++ programs.
+LearnCpp Chapter 2 — Functions and Files.
