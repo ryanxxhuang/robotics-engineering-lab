@@ -8,9 +8,9 @@ The plan must remain sequential, sustainable, and evidence-based. The goal is no
 
 ## Current study day
 
-Current status: **Day 2**
+Current status: **Day 3**
 
-The next study day is Day 3. Do not create a Day 3 record for work that belongs to Day 2.
+The next study day is Day 4. Do not create a Day 3 record for work that belongs to Day 2.
 
 ## Fixed daily structure
 
