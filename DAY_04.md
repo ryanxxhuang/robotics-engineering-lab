@@ -1,4 +1,4 @@
-# Day 4 — C++ Debugging
+# Day 4 — C++ Debugging and Python Data Structures
 
 Date: 2026-09-04
 
@@ -70,23 +70,53 @@ Status: **Postponed**
 
 Formal CS1332 implementation remains postponed while Python syntax becomes more automatic through LeetCode practice.
 
-## Python and LeetCode
+## Python data structures reviewed
 
-Status: **Not yet completed for Day 4**
+- `list`: ordered collection that allows duplicates; commonly used as Python's array.
+- `set`: unique, unordered values; useful for deduplication and membership checks.
+- `dict`: key-value mapping; useful for lookup tables and frequency counting.
+- `tuple`: ordered, immutable collection.
+- `append`: adds one object as one list element.
+- `extend`: adds elements from another iterable into a list.
+- `list(seen)`: converts a set into a list.
 
-The #832 Flipping an Image problem was completed on Day 3 and is recorded in `DAY_03.md`. Day 4's LeetCode problem remains to be started.
+## LeetCode
+
+Completed with guided practice:
+
+### #349 — Intersection of Two Arrays
+
+- Used nested loops to compare values from two lists.
+- Used a `set` to keep only unique intersection values.
+- Converted the final set to a list with `list(seen)`.
+
+### #771 — Jewels and Stones
+
+- Iterated through a string with `for stone in stones`.
+- Used a `set` for jewel membership checks.
+- Counted matching characters with a counter.
+
+### #905 — Sort Array By Parity
+
+- Used `value % 2 == 0` to identify even values.
+- Used `append` to separate even and odd values.
+- Used `extend` to combine the odd values after the even values.
+- Completed an `O(n)` solution.
 
 ## Reflection
 
-The main debugging lesson was that a build failure can occur before the debugger starts. The linker error showed that the C++ driver must be used for C++ programs:
+The main Python lesson was choosing a data structure based on the task:
 
-```text
-clang   -> C compiler driver
-clang++ -> C++ compiler driver and linker
-```
+- Preserve order and duplicates: `list`
+- Remove duplicates or check existence: `set`
+- Map keys to values or count occurrences: `dict`
+- Store fixed data together: `tuple`
+
+The user noticed that algorithmic logic is often clear, while Python container syntax and method behavior require more repetition.
 
 ## Next target
 
 - C++: LearnCpp Chapter 4 — Fundamental Data Types
-- Python: continue practicing loops, indexing, and list operations
-- LeetCode: complete one Easy problem for Day 4
+- Python: begin focused review of `dict`
+- LeetCode: solve one Easy problem using dictionary lookup or counting
+- DSA: remain postponed until Python syntax is more automatic
