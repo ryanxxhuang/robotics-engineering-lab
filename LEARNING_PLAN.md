@@ -8,9 +8,9 @@ The plan must remain sequential, sustainable, and evidence-based. The goal is no
 
 ## Current study day
 
-Current status: **Day 3**
+Current status: **Day 4 complete**
 
-The next study day is Day 4. Do not create a Day 3 record for work that belongs to Day 2.
+The next study day is Day 5.
 
 ## Fixed daily structure
 
@@ -94,10 +94,13 @@ For each CS1332 topic:
 
 - LearnCpp Chapter 0: complete
 - LearnCpp Chapter 1: complete
-- Next C++ lesson: LearnCpp Chapter 2 — Functions and Files
+- LearnCpp Chapter 2: complete
+- LearnCpp Chapter 3: complete
+- Next C++ lesson: LearnCpp Chapter 4 — Fundamental Data Types
 - C++ compiler: Apple Clang
 - C++ standard used in the current project: C++17
 - Build tools: CMake and Git
+- Debug build: `clang++ -std=c++17 -g -O0 -Wall -Wextra -Werror`
 
 ## Day 2 Python and LeetCode record
 
