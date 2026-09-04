@@ -8,9 +8,9 @@ The plan must remain sequential, sustainable, and evidence-based. The goal is no
 
 ## Current study day
 
-Current status: **Day 4 in progress**
+Current status: **Day 4 complete**
 
-Day 4 C++ is complete. Day 4 LeetCode remains pending.
+Day 4 C++ and LeetCode/Python practice are complete. Day 5 will begin with focused Python `dict` review.
 
 ## Fixed daily structure
 
@@ -159,6 +159,55 @@ Complexity:
 
 - Time: O(m × n)
 - Extra space: O(m × n)
+
+## Day 4 Python and LeetCode record
+
+### Python data structures reviewed
+
+- `list`: ordered collection that allows duplicates; commonly used as Python's array.
+- `set`: unique, unordered values; useful for deduplication and membership checks.
+- `dict`: key-value mapping; useful for lookup tables and frequency counting.
+- `tuple`: ordered, immutable collection.
+- `append`: adds one object as one list element.
+- `extend`: adds elements from another iterable into a list.
+- `list(seen)`: converts a set into a list.
+
+### #349 — Intersection of Two Arrays
+
+Completed with guided practice.
+
+Practiced:
+
+- Nested loops comparing values from two lists.
+- Using a `set` to keep only unique intersection values.
+- Converting the final set into a list with `list(seen)`.
+
+### #771 — Jewels and Stones
+
+Completed with guided practice.
+
+Practiced:
+
+- Iterating through a string with `for stone in stones`.
+- Using a `set` for membership checks.
+- Counting matching characters.
+
+### #905 — Sort Array By Parity
+
+Completed with guided practice.
+
+Practiced:
+
+- Identifying even values with `value % 2 == 0`.
+- Using `append` to separate even and odd values.
+- Using `extend` to combine lists.
+- Completing an O(n) solution.
+
+Day 4 learning note:
+
+- The user's algorithmic logic is generally sound.
+- Current friction is mainly Python container syntax and method behavior.
+- LeetCode is being used intentionally to build Python fluency before formal CS1332 implementation.
 
 ## Day record rules
 
