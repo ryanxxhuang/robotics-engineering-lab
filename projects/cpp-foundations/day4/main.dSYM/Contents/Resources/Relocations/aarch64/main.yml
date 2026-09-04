@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/ryanxhuang/robotics-engineering-lab/projects/cpp-foundations/day4/main'
+relocations:     []
+...
