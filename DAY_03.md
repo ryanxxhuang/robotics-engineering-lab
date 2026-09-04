@@ -81,19 +81,35 @@ clang++ -std=c++17 -Wall -Wextra -Wconversion \
 -Wsign-conversion -Werror -pedantic-errors main.cpp -o average
 ```
 
-## Understanding check
+## Python and LeetCode progress
 
-Completed the Chapter 2 review questions. Important corrections identified during review:
+Python is being strengthened through LeetCode practice, with emphasis on loop syntax, indexing, nested lists, `enumerate()`, list methods, and conditionals.
 
-- A `double` function should return a `double` value such as `12.6`.
-- The correct average formula is `(a + b + c) / 3.0`; parentheses are required because of operator precedence.
-- If a `.cpp` definition is not compiled and linked, the likely error is an undefined symbol/linker error.
-- Header guards prevent repeated header inclusion but do not replace a function definition.
+### Completed
+
+- **#1470 — Shuffle the Array:** completed with guided syntax correction; practiced `range(n)`, list indexing, and `append()`.
+- **#1431 — Kids With the Greatest Number of Candies:** completed with guided correction; practiced `for value in list`, `len()`, `range()`, `max()`, and Boolean results.
+- **#1920 — Build Array from Permutation:** independently written and completed; practiced nested indexing such as `nums[nums[i]]`.
+- **#1380 — Lucky Numbers in a Matrix:** completed with guided correction; practiced two-dimensional lists, row/column indexing, nested loops, `min()`, `max()`, and indentation.
+- **#1572 — Matrix Diagonal Sum:** independently completed after one indentation correction; practiced diagonal indexing, `n // 2`, odd/even checks, and avoiding duplicate center counting.
+
+### In progress
+
+- **#832 — Flipping an Image:** first stage completed by reversing each row with `row[::-1]`; value inversion (`0 ↔ 1`) remained in progress at the end of the study session.
+
+### Practice attempted but not recorded as completed
+
+- **#1365 — How Many Numbers Are Smaller Than the Current Number**
+- **#1512 — Number of Good Pairs**
+
+These were introduced as practice exercises, but no final independent completion was confirmed.
 
 ## Reflection
 
 The main objective of today was to understand how functions organize a C++ program: data enters through parameters, computation returns a value, and `main()` coordinates the overall flow. This foundation directly supports future robotics modules such as sensor processing, filtering, planning, and control.
 
+LeetCode practice is also being used intentionally to build Python syntax fluency. The main current gap is not algorithmic reasoning, but translating correct logic into Python syntax—especially choosing between values, indexes, and nested iteration.
+
 ## Next step
 
-Continue with LearnCpp Chapter 3 in order. Keep formal CS1332 DSA implementation postponed until the Python/LeetCode readiness checkpoint, while continuing the daily Python and Easy LeetCode practice.
+Continue with LearnCpp Chapter 3 in order. Keep formal CS1332 DSA implementation postponed until the Python/LeetCode readiness checkpoint, while continuing Python practice and Easy LeetCode problems.
