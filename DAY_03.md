@@ -70,7 +70,7 @@ int main()
 
 Expected output:
 
-```
+```text
 Average: 11
 ```
 
@@ -92,10 +92,12 @@ Python is being strengthened through LeetCode practice, with emphasis on loop sy
 - **#1920 — Build Array from Permutation:** independently written and completed; practiced nested indexing such as `nums[nums[i]]`.
 - **#1380 — Lucky Numbers in a Matrix:** completed with guided correction; practiced two-dimensional lists, row/column indexing, nested loops, `min()`, `max()`, and indentation.
 - **#1572 — Matrix Diagonal Sum:** independently completed after one indentation correction; practiced diagonal indexing, `n // 2`, odd/even checks, and avoiding duplicate center counting.
+- **#832 — Flipping an Image:** completed with guidance; practiced row reversal with `row[::-1]`, nested loops, binary inversion with `1 - value`, and returning a new matrix.
 
-### In progress
+Complexity for #832:
 
-- **#832 — Flipping an Image:** first stage completed by reversing each row with `row[::-1]`; value inversion (`0 ↔ 1`) remained in progress at the end of the study session.
+- Time: O(m × n)
+- Extra space: O(m × n)
 
 ### Practice attempted but not recorded as completed
 
