@@ -72,9 +72,27 @@ Formal CS1332 implementation remains postponed while Python syntax becomes more 
 
 ## Python and LeetCode
 
-Status: **Pending for today**
+### #832 — Flipping an Image
 
-The next study block will focus on Python fluency and one Easy LeetCode problem.
+Status: **Completed with guidance**
+
+Implemented in Python using:
+
+- Row reversal with slicing: `row[::-1]`
+- Nested loops
+- Value transformation: `1 - value`
+- Building and returning a new matrix
+
+The problem reinforced the distinction between:
+
+- Iterating over values directly
+- Using indices when positions are needed
+- Processing a matrix row by row
+
+Complexity:
+
+- Time: O(m × n)
+- Extra space: O(m × n)
 
 ## Reflection
 
@@ -85,8 +103,10 @@ clang   -> C compiler driver
 clang++ -> C++ compiler driver and linker
 ```
 
+The LeetCode practice also showed that the algorithmic idea can be correct while Python syntax, especially nested loops and list construction, still requires deliberate practice.
+
 ## Next target
 
 - C++: LearnCpp Chapter 4 — Fundamental Data Types
 - Python: continue practicing loops, indexing, and list operations
-- LeetCode: complete one Easy problem independently
+- LeetCode: one Easy problem on the next study day
