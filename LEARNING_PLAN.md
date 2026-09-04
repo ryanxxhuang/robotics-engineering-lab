@@ -8,9 +8,9 @@ The plan must remain sequential, sustainable, and evidence-based. The goal is no
 
 ## Current study day
 
-Current status: **Day 4 complete**
+Current status: **Day 4 in progress**
 
-The next study day is Day 5.
+Day 4 C++ is complete. Day 4 LeetCode remains pending.
 
 ## Fixed daily structure
 
@@ -142,7 +142,7 @@ Practiced:
 - `len()`
 - Modulo operator
 
-## Day 4 LeetCode record
+## Day 3 LeetCode record
 
 ### #832 — Flipping an Image
 
