@@ -142,6 +142,24 @@ Practiced:
 - `len()`
 - Modulo operator
 
+## Day 4 LeetCode record
+
+### #832 — Flipping an Image
+
+Completed with guidance in Python.
+
+Practiced:
+
+- Row reversal with slicing: `row[::-1]`
+- Nested loops
+- Binary inversion with `1 - value`
+- Building and returning a new matrix
+
+Complexity:
+
+- Time: O(m × n)
+- Extra space: O(m × n)
+
 ## Day record rules
 
 Every study day should record:
