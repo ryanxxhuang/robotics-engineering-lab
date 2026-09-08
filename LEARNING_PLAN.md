@@ -8,9 +8,9 @@ The plan must remain sequential, sustainable, and evidence-based. The goal is no
 
 ## Current study day
 
-Current status: **Day 4 complete**
+Current status: **Day 5 in progress**
 
-Day 4 C++ and LeetCode/Python practice are complete. Day 5 will begin with focused Python `dict` review.
+Day 4 C++ and LeetCode/Python practice are complete. Day 5 LearnCpp Chapter 4 Summary and Quiz is complete; today's Python and LeetCode practice is pending.
 
 ## Fixed daily structure
 
@@ -96,7 +96,9 @@ For each CS1332 topic:
 - LearnCpp Chapter 1: complete
 - LearnCpp Chapter 2: complete
 - LearnCpp Chapter 3: complete
-- Next C++ lesson: LearnCpp Chapter 4 — Fundamental Data Types
+- LearnCpp Chapter 4.1–4.12: complete
+- LearnCpp Chapter 4 Summary and Quiz Questions 1–2: complete
+- Next C++ lesson: LearnCpp Chapter 5.1 — Constant variables (named constants)
 - C++ compiler: Apple Clang
 - C++ standard used in the current project: C++17
 - Build tools: CMake and Git
@@ -208,6 +210,15 @@ Day 4 learning note:
 - The user's algorithmic logic is generally sound.
 - Current friction is mainly Python container syntax and method behavior.
 - LeetCode is being used intentionally to build Python fluency before formal CS1332 implementation.
+
+## Day 5 C++ record
+
+LearnCpp Chapter 4 Summary and Quiz Questions 1–2 are complete.
+
+- Question 1: selected appropriate fundamental and fixed-width data types.
+- Question 2: implemented a calculator using `getDouble()`, `getOperator()`, `printResult()`, declarations, definitions, `switch`, and `void` early return.
+- DSA remains postponed during the Python interview-fluency phase.
+- Python and LeetCode are the next pending tasks for Day 5.
 
 ## Day record rules
 
